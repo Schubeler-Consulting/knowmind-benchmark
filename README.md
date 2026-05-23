@@ -103,5 +103,5 @@ Jeder Benchmark-Lauf bekommt ein Datum und einen Pipeline-Commit-Hash (siehe `re
 
 - **Plattform:** [knowmind.de](https://knowmind.de)
 - **CLI:** `npm install -g knowmind`
-- **Issues / Anregungen:** [Issues in diesem Repo](https://github.com/WhoSoEverM8/knowmind-benchmark/issues)
+- **Issues / Anregungen:** [Issues in diesem Repo](https://github.com/Schubeler-Consulting/knowmind-benchmark/issues)
 - **Geschäftlich:** info@schuebeler-consulting.de
