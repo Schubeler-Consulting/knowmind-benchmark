@@ -1,0 +1,1001 @@
+{
+  "per_method": {
+    "ripgrep": {
+      "recall_at_5_pct": 55.0,
+      "avg_tokens": 3244,
+      "avg_latency_ms": 26,
+      "avg_cost_eur_ct": 4.476
+    },
+    "fname": {
+      "recall_at_5_pct": 55.0,
+      "avg_tokens": 2660,
+      "avg_latency_ms": 2,
+      "avg_cost_eur_ct": 3.671
+    },
+    "vector_only": {
+      "recall_at_5_pct": 65.0,
+      "avg_tokens": 1600,
+      "avg_latency_ms": 491,
+      "avg_cost_eur_ct": 2.208
+    },
+    "knowmind": {
+      "recall_at_5_pct": 80.0,
+      "avg_tokens": 1805,
+      "avg_latency_ms": 475,
+      "avg_cost_eur_ct": 2.491
+    }
+  },
+  "detailed": [
+    {
+      "q": "Wo läuft die OKR-App?",
+      "gold": [
+        "reference_okr_app",
+        "project_okr_app",
+        "feedback_okr"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3156,
+          "latency_ms": 27,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "reference_okr_app_deploy"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3142,
+          "latency_ms": 2,
+          "top_ids": [
+            "project_okr_app",
+            "reference_okr_app_deploy",
+            "feedback_produkt_vs_dienstleistung"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 2071,
+          "latency_ms": 520,
+          "top_ids": [
+            "fabf9784-c65d-4cd3-b7fe-ad8bde8863ba",
+            "project-okr-app",
+            "f206c612-33db-4ed5-96aa-da8de5f89a5b"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1977,
+          "latency_ms": 454,
+          "top_ids": [
+            "d34f418b-b0ee-4846-8871-0da61bca3075",
+            "MEMORY",
+            "780cdc54-04b4-430d-8ea7-be3c7a2fbb15"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was ist DocTwin?",
+      "gold": [
+        "project_doctwin_status_2026-05-12",
+        "reference_doctwin"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3326,
+          "latency_ms": 21,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_doctwin_status_2026-05-12"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 2921,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_briefing_90tage_harte_frist",
+            "feedback_ministral_code_delegation",
+            "feedback_produkt_vs_dienstleistung"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 429,
+          "latency_ms": 514,
+          "top_ids": [
+            "0af5e6b4-87c8-4c63-a9d6-9c5f5fa21d58",
+            "project-doctwin",
+            "01c1eb11-bc12-4e48-ad0a-2b1a2a5ee969"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 2230,
+          "latency_ms": 521,
+          "top_ids": [
+            "project_doctwin",
+            "DocTwin — Norm-konforme Doku-Generierung",
+            "project_doctwin"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Brand-Marke hat das Bettenparadies?",
+      "gold": [
+        "reference_bettenparadies_ci",
+        "feedback_schreibweise_betten_paradies",
+        "feedback_bpp_premium_voice"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3214,
+          "latency_ms": 23,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "session_handoff_2026-05-12_knowmind_sprint2"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 3209,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_brand_trennung_saas_vs_consulting",
+            "feedback_byok_raus_aus_marketing",
+            "feedback_keine_architektur_in_marketing"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 2071,
+          "latency_ms": 474,
+          "top_ids": [
+            "d34f418b-b0ee-4846-8871-0da61bca3075",
+            "MEMORY",
+            "00070feb-e518-4e10-ab4d-057b806a2898"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 2271,
+          "latency_ms": 438,
+          "top_ids": [
+            "d34f418b-b0ee-4846-8871-0da61bca3075",
+            "MEMORY",
+            "00070feb-e518-4e10-ab4d-057b806a2898"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Telegram-Chat-ID hat Johann?",
+      "gold": [
+        "reference_telegram_chat_id",
+        "feedback_telegram_offline"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3261,
+          "latency_ms": 27,
+          "top_ids": [
+            "MEMORY",
+            "feedback_name",
+            "reference_stripe_notifications_übersicht"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 1817,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_johann_voice_enge_bekannte",
+            "feedback_telegram_bestaetigen",
+            "feedback_telegram_offline"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1437,
+          "latency_ms": 448,
+          "top_ids": [
+            "reference_stripe_notifications_übersicht",
+            "stripe-notifications-bersicht",
+            "1f6fe213-dd20-4ccd-a0e3-0d7e208bf211"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1403,
+          "latency_ms": 421,
+          "top_ids": [
+            "reference_stripe_notifications_übersicht",
+            "stripe-notifications-bersicht",
+            "1f6fe213-dd20-4ccd-a0e3-0d7e208bf211"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie funktioniert der Karpathy-Loop?",
+      "gold": [
+        "project_sc_memory_mcp",
+        "reference_karpathy_loop"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3289,
+          "latency_ms": 25,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_name"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 1835,
+          "latency_ms": 3,
+          "top_ids": [
+            "feedback_blogbeitragsbilder_via_codex",
+            "feedback_provider_layer_ohne_tests",
+            "feedback_sc_beratungsfelder"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 1660,
+          "latency_ms": 489,
+          "top_ids": [
+            "project_doctwin_ziel_100_prozent_recall",
+            "doctwin-ziel-100-prozent-recall",
+            "8d816e60-96db-4a5b-a9ae-07eea928758f"
+          ]
+        },
+        "knowmind": {
+          "hit": false,
+          "tokens": 2151,
+          "latency_ms": 425,
+          "top_ids": [
+            "project_doctwin_ziel_100_prozent_recall",
+            "doctwin-ziel-100-prozent-recall",
+            "8d816e60-96db-4a5b-a9ae-07eea928758f"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was ist Rotando Booking?",
+      "gold": [
+        "reference_container_naming_ops",
+        "feedback_rotando_deploy_checklist",
+        "feedback_rotando_mandanten_tz"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3306,
+          "latency_ms": 24,
+          "top_ids": [
+            "project_rotando_booking",
+            "feedback_kein_ki_geschlabber",
+            "MEMORY"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3193,
+          "latency_ms": 2,
+          "top_ids": [
+            "project_rotando_booking_polish_liste",
+            "feedback_rotando_deploy_checklist",
+            "project_rotando_booking"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 1143,
+          "latency_ms": 542,
+          "top_ids": [
+            "13239cac-9bb7-4e28-a8e3-f92b39c7335d",
+            "project-rotando-booking-mail-pipeline-bug",
+            "e3ebc3c0-c311-40c3-82eb-80a519345374"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1665,
+          "latency_ms": 568,
+          "top_ids": [
+            "project_rotando_booking",
+            "Rotando Booking — White-Label-Buchungssoftware",
+            "02381775-79a8-4d0f-8e0b-2f1450f17bbc"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Lizenzmodell hat das ai-exzellenz-starter Repo?",
+      "gold": [
+        "project_ai_exzellenz_starter"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3231,
+          "latency_ms": 42,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_nacht_plan_2026-05-13_komplett"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2852,
+          "latency_ms": 3,
+          "top_ids": [
+            "project_ai_exzellenz_starter",
+            "feedback_status_report_discipline",
+            "project_ai_exzellenz"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1975,
+          "latency_ms": 496,
+          "top_ids": [
+            "project_ai_exzellenz_starter",
+            "ai-exzellenz-starter — MIT-Repo für professionelles LLM-CLI-Setup",
+            "14ec9738-9382-4e84-b911-8b95999fcd9f"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1975,
+          "latency_ms": 460,
+          "top_ids": [
+            "project_ai_exzellenz_starter",
+            "ai-exzellenz-starter — MIT-Repo für professionelles LLM-CLI-Setup",
+            "14ec9738-9382-4e84-b911-8b95999fcd9f"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wann gab es einen RAM-Leak im Memory-Service?",
+      "gold": [
+        "project_soviq_memory_leak"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 2997,
+          "latency_ms": 38,
+          "top_ids": [
+            "MEMORY",
+            "project_knowmind_tenant_isolation_audit_2026-05-13",
+            "project_knowmind_bugfix_sprint_2026-05-22"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 1982,
+          "latency_ms": 2,
+          "top_ids": [
+            "project_soviq_memory_leak",
+            "feedback_external_tools_immediately_to_memory",
+            "feedback_issues_abarbeiten_ohne_freigabe"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1068,
+          "latency_ms": 445,
+          "top_ids": [
+            "96b6696e-02eb-4535-bc2b-c73d929ec58c",
+            "project-soviq-memory-leak",
+            "8befa20b-a92d-4b42-ba25-9d6e532c4f3e"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1068,
+          "latency_ms": 454,
+          "top_ids": [
+            "96b6696e-02eb-4535-bc2b-c73d929ec58c",
+            "project-soviq-memory-leak",
+            "8befa20b-a92d-4b42-ba25-9d6e532c4f3e"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was wurde am Spec-Full-Rollout gemacht?",
+      "gold": [
+        "project_spec_full_rollout_2026-05-13"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3220,
+          "latency_ms": 25,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_spec_full_rollout_2026-05-13"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 1213,
+          "latency_ms": 2,
+          "top_ids": [
+            "project_spec_full_rollout_2026-05-13",
+            "project_sc_memory_graph_spec_konformitaet"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1906,
+          "latency_ms": 451,
+          "top_ids": [
+            "project_spec_full_rollout_2026-05-13",
+            "spec-full-rollout-2026-05-13",
+            "2d0a5201-d271-4117-849c-4b0801de127c"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1906,
+          "latency_ms": 471,
+          "top_ids": [
+            "project_spec_full_rollout_2026-05-13",
+            "spec-full-rollout-2026-05-13",
+            "2d0a5201-d271-4117-849c-4b0801de127c"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Service-Token-Auth wird zwischen Control-Plane und Memory genutzt?",
+      "gold": [
+        "session_handoff_2026-05-12_knowmind_sprint2"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3200,
+          "latency_ms": 28,
+          "top_ids": [
+            "MEMORY",
+            "project_knowmind_tenant_isolation_audit_2026-05-13",
+            "project_rotando_booking"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 2874,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_auth_fixes_nebenwirkungen",
+            "feedback_boilerplate_und_kostenfrei",
+            "feedback_external_tools_immediately_to_memory"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 1929,
+          "latency_ms": 461,
+          "top_ids": [
+            "project_knowmind_tenant_isolation_audit_2026-05-13",
+            "project_knowmind_tenant_isolation_audit_2026-05-13",
+            "8646dc11-db8f-4b4e-b11c-28c7f9e6a216"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 2165,
+          "latency_ms": 502,
+          "top_ids": [
+            "project_knowmind_tenant_isolation_audit_2026-05-13",
+            "project_knowmind_tenant_isolation_audit_2026-05-13",
+            "8646dc11-db8f-4b4e-b11c-28c7f9e6a216"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie schreibt man Em-Dashes in SC-Texten?",
+      "gold": [
+        "feedback_kein_ki_geschlabber",
+        "feedback_keine_antithesen"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3333,
+          "latency_ms": 21,
+          "top_ids": [
+            "MEMORY",
+            "feedback_kein_ki_geschlabber",
+            "project_vater_buch"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 2155,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_gemini_schreibt_in_claude_dir",
+            "feedback_rotando_mandanten_tz",
+            "feedback_sso_feature_on_demand"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 2020,
+          "latency_ms": 492,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "Kein KI-Geschlabber in Johanns Texten",
+            "e8e39395-3814-4d99-833a-7b4a9bb769b7"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 2299,
+          "latency_ms": 479,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "Kein KI-Geschlabber in Johanns Texten",
+            "e8e39395-3814-4d99-833a-7b4a9bb769b7"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was steht in der Blogpost-Featured-Image-Vorlage?",
+      "gold": [
+        "feedback_blogbeitragsbilder_via_codex"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3322,
+          "latency_ms": 26,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_pitchdeck_premium_kein_geschlabber"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2542,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_blogbeitragsbilder_via_codex",
+            "feedback_provider_layer_ohne_tests",
+            "feedback_sc_beratungsfelder"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1412,
+          "latency_ms": 467,
+          "top_ids": [
+            "feedback_blogbeitragsbilder_via_codex",
+            "blogbeitragsbilder-via-codex",
+            "a371d630-6767-47d7-87dc-41038c4c52eb"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1412,
+          "latency_ms": 455,
+          "top_ids": [
+            "feedback_blogbeitragsbilder_via_codex",
+            "blogbeitragsbilder-via-codex",
+            "a371d630-6767-47d7-87dc-41038c4c52eb"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wer ist Hanna?",
+      "gold": [
+        "project_sc_memory_deploy_bettenparadies",
+        "reference_hanna"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3282,
+          "latency_ms": 22,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_schuebeler_finanzanalyst"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 2921,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_briefing_90tage_harte_frist",
+            "feedback_linkedin_werbung_pattern",
+            "feedback_ministral_code_delegation"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 1313,
+          "latency_ms": 508,
+          "top_ids": [
+            "d34f418b-b0ee-4846-8871-0da61bca3075",
+            "MEMORY",
+            "6c89f615-22ce-41f4-b74f-d0fc230dcafe"
+          ]
+        },
+        "knowmind": {
+          "hit": false,
+          "tokens": 2022,
+          "latency_ms": 493,
+          "top_ids": [
+            "project_hanna_pptx_kurs",
+            "PowerPoint-Kurs für Hanna — Vertonung in Wellen",
+            "project_hanna_pptx_kurs"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche IP hat schuebeler.de?",
+      "gold": [
+        "reference_schuebeler_de_hosting"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3176,
+          "latency_ms": 23,
+          "top_ids": [
+            "MEMORY",
+            "reference_schuebeler_de_hosting",
+            "project_rotando_booking"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2652,
+          "latency_ms": 2,
+          "top_ids": [
+            "project_schuebeler_finanzanalyst",
+            "project_schuebeler_vater_familie",
+            "reference_schuebeler_de_hosting"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1683,
+          "latency_ms": 489,
+          "top_ids": [
+            "d34f418b-b0ee-4846-8871-0da61bca3075",
+            "MEMORY",
+            "b930484b-2f8f-4c5a-b036-84a5b9718fea"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1387,
+          "latency_ms": 449,
+          "top_ids": [
+            "reference_schuebeler_de_hosting",
+            "schuebeler.de Hosting & WordPress-Setup (Vater-Site)",
+            "23285d09-169a-4dfe-8b5c-872bfdf0a10e"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was ist das Knowmind-Pre-Ingest?",
+      "gold": [
+        "reference_knowmind_preference_extractor"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3318,
+          "latency_ms": 25,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "session_handoff_2026-05-12_knowmind_sprint2"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2901,
+          "latency_ms": 2,
+          "top_ids": [
+            "reference_knowmind_preference_extractor",
+            "reference_sc_memory_ist_knowmind",
+            "feedback_bpp_premium_voice"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1462,
+          "latency_ms": 579,
+          "top_ids": [
+            "67a65bfa-6dee-4b23-bb1f-716a0534a388",
+            "reference-sc-memory-ist-knowmind",
+            "bf25262c-3c62-466b-97e8-3878989976ae"
+          ]
+        },
+        "knowmind": {
+          "hit": false,
+          "tokens": 2266,
+          "latency_ms": 607,
+          "top_ids": [
+            "project_knowmind_brand",
+            "Plattform-Marke „Knowmind\" — Wortspiel know more / no more / knowing mind",
+            "project_knowmind_brand"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wann wurde das Vater-Buch v6 fertig?",
+      "gold": [
+        "session_handoff_2026-05-22_knowmind_install"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3188,
+          "latency_ms": 27,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_vater_buch_ablage"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 3215,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_vater_buch_ablage",
+            "project_vater_buch",
+            "reference_vater_buch_edits_workflow"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1520,
+          "latency_ms": 462,
+          "top_ids": [
+            "project_vater_buch",
+            "Vaterbuch Projekt",
+            "4c5ffbbe-2b56-43a4-911c-0f38870a6481"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1278,
+          "latency_ms": 431,
+          "top_ids": [
+            "project_vater_buch",
+            "Vaterbuch Projekt",
+            "4c5ffbbe-2b56-43a4-911c-0f38870a6481"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Migrations-Schritte gab es beim Knowmind-Bugfix-Sprint?",
+      "gold": [
+        "project_knowmind_bugfix_sprint_2026-05-22"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3264,
+          "latency_ms": 26,
+          "top_ids": [
+            "MEMORY",
+            "session_handoff_2026-05-12_knowmind_sprint2",
+            "session_handoff_2026-05-22_knowmind_install"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2940,
+          "latency_ms": 3,
+          "top_ids": [
+            "project_knowmind_bugfix_sprint_2026-05-22",
+            "session_handoff_2026-05-12_knowmind_sprint2",
+            "feedback_issues_abarbeiten_ohne_freigabe"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1881,
+          "latency_ms": 486,
+          "top_ids": [
+            "project_spec_full_rollout_2026-05-13",
+            "spec-full-rollout-2026-05-13",
+            "57488c74-4f1f-4557-a717-59283c226987"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1881,
+          "latency_ms": 458,
+          "top_ids": [
+            "project_spec_full_rollout_2026-05-13",
+            "spec-full-rollout-2026-05-13",
+            "57488c74-4f1f-4557-a717-59283c226987"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie viele Memories liegen im Knowmind-Mandanten?",
+      "gold": [
+        "project_knowmind_audit_2026-05-22",
+        "reference_sc_memory_ist_knowmind"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3281,
+          "latency_ms": 30,
+          "top_ids": [
+            "MEMORY",
+            "session_handoff_2026-05-22_knowmind_install",
+            "session_handoff_2026-05-12_knowmind_sprint2"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3144,
+          "latency_ms": 3,
+          "top_ids": [
+            "feedback_rotando_mandanten_tz",
+            "project_knowmind_audit_2026-05-22",
+            "project_knowmind_brand"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1456,
+          "latency_ms": 438,
+          "top_ids": [
+            "67a65bfa-6dee-4b23-bb1f-716a0534a388",
+            "reference-sc-memory-ist-knowmind",
+            "bf25262c-3c62-466b-97e8-3878989976ae"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1456,
+          "latency_ms": 453,
+          "top_ids": [
+            "67a65bfa-6dee-4b23-bb1f-716a0534a388",
+            "reference-sc-memory-ist-knowmind",
+            "bf25262c-3c62-466b-97e8-3878989976ae"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie deploye ich auf die Knowmind-Plattform?",
+      "gold": [
+        "reference_knowmind_platform_deploy"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3191,
+          "latency_ms": 24,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_johann_voice_enge_bekannte"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 2798,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_durcharbeiten_nicht_nachfragen",
+            "feedback_fts_sprache_nicht_hartcoden",
+            "feedback_häufige_abstürze_speichern"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 1635,
+          "latency_ms": 455,
+          "top_ids": [
+            "b46f92c8-198d-4f2e-baac-f965cbf60915",
+            "project-knowmind-cli",
+            "2b7aa7ee-d05f-42ab-92bb-6bc508aa9d2d"
+          ]
+        },
+        "knowmind": {
+          "hit": false,
+          "tokens": 1582,
+          "latency_ms": 423,
+          "top_ids": [
+            "project_nacht_plan_2026-05-13_komplett",
+            "nacht-plan-2026-05-13-komplett",
+            "41c7a8a0-ecda-4b6e-b25a-b1392ace5610"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was ist der KI-Start-Kompass?",
+      "gold": [
+        "project_ki_beratung_nrw_funnel"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3316,
+          "latency_ms": 25,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_pitchdeck_premium_kein_geschlabber"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 2899,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_blogbeitragsbilder_via_codex",
+            "feedback_briefing_90tage_harte_frist",
+            "feedback_ministral_code_delegation"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 1934,
+          "latency_ms": 599,
+          "top_ids": [
+            "66834746-c0da-473b-9f19-2fd72926e0fa",
+            "reference-aix-blog-index",
+            "2bf4e874-b616-4e36-a2ec-3778f43c70d9"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1710,
+          "latency_ms": 545,
+          "top_ids": [
+            "6d4e96f7-46fa-4ab1-98dd-41408f06b474",
+            "project-ki-beratung-nrw-funnel",
+            "5ab1e9f6-5fa8-4120-b0ac-e64498548f0b"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-23",
+  "pipeline_version": "iteration_2",
+  "corpus": {
+    "type": "Schübeler Consulting interner Wissensspeicher",
+    "memory_count": 1219,
+    "vector_chunks": 1689,
+    "edges": 2770,
+    "language": "de"
+  },
+  "model": {
+    "embedding": "intfloat/multilingual-e5-large",
+    "embedding_dim": 1024,
+    "reranker": "jinaai/jina-reranker-v2-base-multilingual",
+    "reranker_enabled": false,
+    "reranker_note": "implementiert, auf diesem Korpus neutral, deaktiviert per Default"
+  },
+  "evaluation": {
+    "metric_primary": "Recall@5",
+    "metric_secondary": ["Tokens@5", "Latenz_ms"],
+    "k": 5,
+    "tokenizer": "cl100k_base"
+  },
+  "questions": {
+    "train_set": 20,
+    "val_set": 30,
+    "held_out_set": 20,
+    "tuning_isolation": "Held-Out-Fragen wurden bis zur finalen Messung NICHT für Pipeline-Tuning verwendet."
+  },
+  "caveats": [
+    "n=20 im Held-Out — 95%-Konfidenzintervall für 80%-Recall ist ca. 56-94%.",
+    "Korpus aus EINER Domäne (Mittelstands-Beratung, Tech-Doku, KI). Andere Domänen können andere Ergebnisse liefern.",
+    "Sprache Deutsch. Englisch/andere Sprachen sind nicht abgedeckt.",
+    "Vergleichsmethoden sind generisch implementiert — ein hochoptimiertes BM25-Setup oder ein anderes Embedding-Modell kann die Alternativ-Werte verschieben."
+  ]
+}

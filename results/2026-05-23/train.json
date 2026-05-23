@@ -1,0 +1,1039 @@
+{
+  "model": "claude-opus-4-7",
+  "price_input_usd_per_mtok": 15.0,
+  "k": 5,
+  "questions_total": 20,
+  "per_method": {
+    "ripgrep": {
+      "recall_at_5_pct": 90.0,
+      "avg_context_tokens": 3251,
+      "avg_latency_ms": 34,
+      "avg_input_cost_usd": 0.04876,
+      "avg_input_cost_eur": 0.04486
+    },
+    "fname": {
+      "recall_at_5_pct": 90.0,
+      "avg_context_tokens": 2793,
+      "avg_latency_ms": 2,
+      "avg_input_cost_usd": 0.0419,
+      "avg_input_cost_eur": 0.03854
+    },
+    "vector_only": {
+      "recall_at_5_pct": 85.0,
+      "avg_context_tokens": 1541,
+      "avg_latency_ms": 2190,
+      "avg_input_cost_usd": 0.02312,
+      "avg_input_cost_eur": 0.02127
+    },
+    "knowmind": {
+      "recall_at_5_pct": 90.0,
+      "avg_context_tokens": 1655,
+      "avg_latency_ms": 1911,
+      "avg_input_cost_usd": 0.02483,
+      "avg_input_cost_eur": 0.02284
+    }
+  },
+  "detailed": [
+    {
+      "q": "Wer leitet das Bettenparadies?",
+      "expected": [
+        "bettenparadies",
+        "cordt-ulrich",
+        "carl-august",
+        "schuebeler_vater_familie"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3232,
+          "latency_ms": 35,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "session_handoff_2026-05-12_knowmind_sprint2"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3266,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_linkedin_werbung_pattern",
+            "feedback_powershell_zip_backslashes",
+            "project_bettenparadies_website"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 2020,
+          "latency_ms": 7108,
+          "top_ids": [
+            "reference_bettenparadies_kontakt",
+            "Betten-Paradies & Pension Schübeler — verifizierte Stammdaten",
+            "044749f8-2951-43cf-9021-81eb3a5e7c79"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1471,
+          "latency_ms": 1761,
+          "top_ids": [
+            "c2613ba7-af35-4889-957a-d568e4f7ad25",
+            "Person: Carl-August Schübeler",
+            "c2613ba7-af35-4889-957a-d568e4f7ad25"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was ist SC?",
+      "expected": [
+        "schuebeler-consulting",
+        "schuebeler_consulting"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3323,
+          "latency_ms": 35,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_schuebeler_finanzanalyst"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 2921,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_briefing_90tage_harte_frist",
+            "feedback_ministral_code_delegation",
+            "feedback_produkt_vs_dienstleistung"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 499,
+          "latency_ms": 1822,
+          "top_ids": [
+            "feedback_sc_premium_voice",
+            "SC = Premium-Beratung — Voice + UI/UX",
+            "6cf10f92-0906-4934-80f3-4eeb753fc66f"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1572,
+          "latency_ms": 1963,
+          "top_ids": [
+            "a5026012-e608-4e22-9828-2d1685ea3bd2",
+            "Organisation: Schübeler Consulting",
+            "a5026012-e608-4e22-9828-2d1685ea3bd2"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Tarife hat knowmind?",
+      "expected": [
+        "knowmind",
+        "stripe",
+        "pricing",
+        "tier"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3291,
+          "latency_ms": 30,
+          "top_ids": [
+            "MEMORY",
+            "project_knowmind_audit_2026-05-22",
+            "session_handoff_2026-05-22_knowmind_install"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3209,
+          "latency_ms": 2,
+          "top_ids": [
+            "project_knowmind_audit_2026-05-22",
+            "project_knowmind_brand",
+            "project_knowmind_bugfix_sprint_2026-05-22"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1324,
+          "latency_ms": 1730,
+          "top_ids": [
+            "97e36006-1fc2-451f-816d-d4b3b5312956",
+            "project-knowmind-brand",
+            "de5298ec-060a-4aef-8473-8532fa1d6888"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1956,
+          "latency_ms": 1812,
+          "top_ids": [
+            "ab72ddfc-5f50-46d9-90d1-5849c96e01c0",
+            "Knowmind Audit-Log-Retention pro Tarif (Stand 2026-05-22)",
+            "bc8e6b41-9217-40f1-a436-7eec581b81df"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Auf welchem Server läuft das LMS?",
+      "expected": [
+        "hetzner",
+        "lms",
+        "wp-learning"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3222,
+          "latency_ms": 33,
+          "top_ids": [
+            "MEMORY",
+            "feedback_kein_ki_geschlabber",
+            "session_handoff_2026-05-12_knowmind_sprint2"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2496,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_keine_compliance_interna_auf_website",
+            "feedback_lms_deploy_stale_containers",
+            "project_doctwin_iter7_pipeline_durchlauf"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1653,
+          "latency_ms": 1787,
+          "top_ids": [
+            "reference_lm_studio",
+            "LM Studio (lokal, Fallback-only)",
+            "a76a6182-516b-4a61-8d9c-39cf821664c1"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1316,
+          "latency_ms": 1877,
+          "top_ids": [
+            "reference_hilde_tunnel_lm_studio",
+            "Hilde läuft per Tunnel über lokales LM Studio",
+            "631c45e2-e154-4f39-b3eb-fe0904372324"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wer ist Carl-August Schübeler?",
+      "expected": [
+        "carl-august",
+        "schuebeler_vater_familie"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3375,
+          "latency_ms": 34,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_schuebeler_finanzanalyst"
+          ]
+        },
+        "fname": {
+          "hit": false,
+          "tokens": 2921,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_briefing_90tage_harte_frist",
+            "feedback_linkedin_werbung_pattern",
+            "feedback_ministral_code_delegation"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1791,
+          "latency_ms": 1951,
+          "top_ids": [
+            "d34f418b-b0ee-4846-8871-0da61bca3075",
+            "MEMORY",
+            "5e4ea870-a982-4455-adb4-27cd297187eb"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1109,
+          "latency_ms": 1928,
+          "top_ids": [
+            "c2613ba7-af35-4889-957a-d568e4f7ad25",
+            "Person: Carl-August Schübeler",
+            "c2613ba7-af35-4889-957a-d568e4f7ad25"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie ist die SSH-Verbindung zum Hetzner-Server?",
+      "expected": [
+        "hetzner",
+        "ssh"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3189,
+          "latency_ms": 33,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_rotando_booking"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2458,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_produkt_vs_dienstleistung",
+            "feedback_briefing_90tage_harte_frist",
+            "feedback_hetzner_klein_rotando"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1347,
+          "latency_ms": 2168,
+          "top_ids": [
+            "feedback_deploy_retry_rate_limit",
+            "Deploy-Retries nicht während Docker-Build spammen (SSH-MaxStartups-Throttling)",
+            "66971d17-64f7-4035-94bb-9d248c519202"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1347,
+          "latency_ms": 1954,
+          "top_ids": [
+            "feedback_deploy_retry_rate_limit",
+            "Deploy-Retries nicht während Docker-Build spammen (SSH-MaxStartups-Throttling)",
+            "66971d17-64f7-4035-94bb-9d248c519202"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Sprache verwenden wir für die Tech-Doku-Beratung?",
+      "expected": [
+        "deutsch",
+        "sprache",
+        "umlaut",
+        "voice"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3216,
+          "latency_ms": 43,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_johann_voice_enge_bekannte"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3083,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_auth_fixes_nebenwirkungen",
+            "feedback_fts_sprache_nicht_hartcoden",
+            "feedback_produkt_vs_dienstleistung"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1411,
+          "latency_ms": 1843,
+          "top_ids": [
+            "feedback_keine_ccms_auswahl",
+            "SC bietet KEINE eigenständige CCMS-Auswahl an — Partner-Portfolio-Schutz",
+            "201163e6-7040-40e6-9707-b7b8083fa031"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1411,
+          "latency_ms": 1825,
+          "top_ids": [
+            "feedback_keine_ccms_auswahl",
+            "SC bietet KEINE eigenständige CCMS-Auswahl an — Partner-Portfolio-Schutz",
+            "201163e6-7040-40e6-9707-b7b8083fa031"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie heißt das WordPress-Theme der SC-Website?",
+      "expected": [
+        "consulting_page",
+        "consulting-page",
+        "sc_theme",
+        "schuebeler-consulting"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3282,
+          "latency_ms": 39,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "session_handoff_2026-05-12_knowmind_sprint2"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3080,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_blogbeitragsbilder_via_codex",
+            "feedback_keine_compliance_interna_auf_website",
+            "feedback_provider_layer_ohne_tests"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1757,
+          "latency_ms": 1914,
+          "top_ids": [
+            "reference_sc_theme_landing_template",
+            "sc-theme-landing-template",
+            "9454c664-8eaf-49e5-9b95-1714bcf67793"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1757,
+          "latency_ms": 1706,
+          "top_ids": [
+            "reference_sc_theme_landing_template",
+            "sc-theme-landing-template",
+            "9454c664-8eaf-49e5-9b95-1714bcf67793"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wann läuft das 7-Tage-Limit von Claude Pro zurück?",
+      "expected": [
+        "claude_7d",
+        "reset"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3329,
+          "latency_ms": 32,
+          "top_ids": [
+            "MEMORY",
+            "feedback_kein_ki_geschlabber",
+            "session_handoff_2026-05-12_knowmind_sprint2"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2567,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_briefing_90tage_harte_frist",
+            "feedback_deploy_retry_rate_limit",
+            "feedback_gemini_schreibt_in_claude_dir"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1430,
+          "latency_ms": 1939,
+          "top_ids": [
+            "reference_claude_7d_reset",
+            "Claude 7d-Limit Reset-Zeit",
+            "258dfbf4-d5fc-4e98-b75a-d63c228c04b9"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1380,
+          "latency_ms": 1883,
+          "top_ids": [
+            "reference_claude_7d_reset",
+            "Claude 7d-Limit Reset-Zeit",
+            "258dfbf4-d5fc-4e98-b75a-d63c228c04b9"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Edge-Typen gibt es im Wissensgraph?",
+      "expected": [
+        "edge",
+        "graph",
+        "schema",
+        "sc_memory_graph"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3099,
+          "latency_ms": 28,
+          "top_ids": [
+            "MEMORY",
+            "project_sc_memory_graph_spec_konformitaet",
+            "project_knowmind_pain_roadmap_2026-05-22"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 516,
+          "latency_ms": 2,
+          "top_ids": [
+            "reference_authjs_v5_edge_split"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1750,
+          "latency_ms": 1965,
+          "top_ids": [
+            "reference_brain_remodel_2026-05-04",
+            "SC-Memory-Graph — Brain-Remodel 2026-05-04",
+            "f9b6e5db-3129-4c7d-872d-aa78d64c4491"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1941,
+          "latency_ms": 2205,
+          "top_ids": [
+            "reference_brain_remodel_2026-05-04",
+            "SC-Memory-Graph — Brain-Remodel 2026-05-04",
+            "f9b6e5db-3129-4c7d-872d-aa78d64c4491"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie kann ich knowmind auf einem neuen Rechner einrichten?",
+      "expected": [
+        "knowmind",
+        "install",
+        "cli",
+        "setup"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3130,
+          "latency_ms": 36,
+          "top_ids": [
+            "MEMORY",
+            "feedback_kein_ki_geschlabber",
+            "feedback_johann_voice_enge_bekannte"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2772,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_durcharbeiten_nicht_nachfragen",
+            "feedback_fts_sprache_nicht_hartcoden",
+            "feedback_häufige_abstürze_speichern"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1283,
+          "latency_ms": 2011,
+          "top_ids": [
+            "0630f5ae-71d9-4459-a9c2-9a73b24dff1a",
+            "reference-neodash-connection",
+            "28af31b8-47f5-4136-8792-8aeae0e0b6aa"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1283,
+          "latency_ms": 2144,
+          "top_ids": [
+            "0630f5ae-71d9-4459-a9c2-9a73b24dff1a",
+            "reference-neodash-connection",
+            "28af31b8-47f5-4136-8792-8aeae0e0b6aa"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was sind die wichtigsten SC-Werteversprechen?",
+      "expected": [
+        "sc_website",
+        "ki_beratung",
+        "marketing"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3231,
+          "latency_ms": 31,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_johann_voice_enge_bekannte"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3297,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_produkt_vs_dienstleistung",
+            "feedback_schreibweise_betten_paradies",
+            "project_bettenparadies_website"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 1978,
+          "latency_ms": 2102,
+          "top_ids": [
+            "feedback_sc_premium_voice",
+            "SC = Premium-Beratung — Voice + UI/UX",
+            "6cf10f92-0906-4934-80f3-4eeb753fc66f"
+          ]
+        },
+        "knowmind": {
+          "hit": false,
+          "tokens": 1978,
+          "latency_ms": 2083,
+          "top_ids": [
+            "feedback_sc_premium_voice",
+            "SC = Premium-Beratung — Voice + UI/UX",
+            "6cf10f92-0906-4934-80f3-4eeb753fc66f"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche MCP-Server sind in claude.json registriert?",
+      "expected": [
+        "mcp",
+        "claude_json",
+        "claude.json"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3312,
+          "latency_ms": 35,
+          "top_ids": [
+            "MEMORY",
+            "session_handoff_2026-05-22_knowmind_install",
+            "project_agent_anbindung_test_2026-05-17"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2287,
+          "latency_ms": 2,
+          "top_ids": [
+            "project_mcp_server",
+            "feedback_gemini_schreibt_in_claude_dir",
+            "feedback_stil_arbeit_claude_nicht_lokal"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1315,
+          "latency_ms": 2080,
+          "top_ids": [
+            "1d59ed15-2a79-40b1-a0e6-f02158fcacca",
+            "reference-ms365-mcp",
+            "bf12dd1f-d77f-45c4-bf29-c4f39a4c0789"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1367,
+          "latency_ms": 1938,
+          "top_ids": [
+            "ce61fd8d-d539-4e2f-abd3-8d24c013c8d6",
+            "session-handoff-2026-05-22-knowmind-install",
+            "0ce03e38-3767-4429-8401-07f9310b47ab"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie lautet die Pricing-Strategie für Plus-Tier?",
+      "expected": [
+        "knowmind",
+        "pricing",
+        "plus",
+        "stripe"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3288,
+          "latency_ms": 34,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_rotando_booking"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3297,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_produkt_vs_dienstleistung",
+            "feedback_schreibweise_betten_paradies",
+            "project_bettenparadies_website"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1911,
+          "latency_ms": 1863,
+          "top_ids": [
+            "feedback_keine_antithesen",
+            "KEINE Antithesen, KEIN KI-Geschlabber",
+            "eef47130-2987-4cb9-aec8-de8e1d5b83a8"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1936,
+          "latency_ms": 1798,
+          "top_ids": [
+            "feedback_keine_antithesen",
+            "KEINE Antithesen, KEIN KI-Geschlabber",
+            "eef47130-2987-4cb9-aec8-de8e1d5b83a8"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Welche Standorte hat die SC-Beratung?",
+      "expected": [
+        "beverungen",
+        "owl",
+        "weserbergland",
+        "standort"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": false,
+          "tokens": 3249,
+          "latency_ms": 31,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_johann_voice_enge_bekannte"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3222,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_produkt_vs_dienstleistung",
+            "feedback_schreibweise_betten_paradies",
+            "feedback_sc_beratungsfelder"
+          ]
+        },
+        "vector_only": {
+          "hit": false,
+          "tokens": 1878,
+          "latency_ms": 1854,
+          "top_ids": [
+            "10326a2e-bfc6-4a52-8320-1660244edf26",
+            "feedback-sc-beratungsfelder",
+            "b4fd29a9-3259-4490-bd8f-f763d65ec0d1"
+          ]
+        },
+        "knowmind": {
+          "hit": false,
+          "tokens": 1878,
+          "latency_ms": 2067,
+          "top_ids": [
+            "10326a2e-bfc6-4a52-8320-1660244edf26",
+            "feedback-sc-beratungsfelder",
+            "b4fd29a9-3259-4490-bd8f-f763d65ec0d1"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was passiert mit Sessions wenn das LLM Kontext verliert?",
+      "expected": [
+        "memory",
+        "context",
+        "session"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3222,
+          "latency_ms": 33,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "session_handoff_2026-05-12_knowmind_sprint2"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2733,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_deploy_retry_rate_limit",
+            "feedback_kein_mittelstand_default",
+            "feedback_lokale_llm_nutzen"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1496,
+          "latency_ms": 1803,
+          "top_ids": [
+            "feedback_keine_parallelen_tasks",
+            "Parallele Tasks vermeiden bei lokaler LLM",
+            "916f27bd-0452-42f9-baa3-ebbd2f1970d1"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 2055,
+          "latency_ms": 1844,
+          "top_ids": [
+            "feedback_keine_parallelen_tasks",
+            "Parallele Tasks vermeiden bei lokaler LLM",
+            "916f27bd-0452-42f9-baa3-ebbd2f1970d1"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie funktioniert die Memory-First-Standing-Order?",
+      "expected": [
+        "memory_first",
+        "memory-first"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3239,
+          "latency_ms": 32,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "project_nacht_plan_2026-05-13_komplett"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2896,
+          "latency_ms": 2,
+          "top_ids": [
+            "project_memory_first_system_2026-05-13",
+            "project_sc_memory_deploy_bettenparadies",
+            "feedback_external_tools_immediately_to_memory"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1416,
+          "latency_ms": 1954,
+          "top_ids": [
+            "project_memory_first_system_2026-05-13",
+            "memory-first-system",
+            "64a8dc90-916c-4928-9d3f-5383f490ea36"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 2121,
+          "latency_ms": 1936,
+          "top_ids": [
+            "project_memory_first_system_2026-05-13",
+            "memory-first-system",
+            "64a8dc90-916c-4928-9d3f-5383f490ea36"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Was ist der Unterschied zwischen Plus und Pro?",
+      "expected": [
+        "knowmind",
+        "pricing",
+        "plus",
+        "pro"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3288,
+          "latency_ms": 44,
+          "top_ids": [
+            "MEMORY",
+            "feedback_kein_ki_geschlabber",
+            "project_rotando_booking"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3066,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_produkt_vs_dienstleistung",
+            "feedback_provider_layer_ohne_tests",
+            "project_rotando_booking_polish_liste"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1369,
+          "latency_ms": 2096,
+          "top_ids": [
+            "feedback_keine_antithesen",
+            "KEINE Antithesen, KEIN KI-Geschlabber",
+            "40fac624-5b2e-486d-9f00-12b4726148d1"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1340,
+          "latency_ms": 1828,
+          "top_ids": [
+            "feedback_theme_slug_stability",
+            "Theme-Slug NIE zwischen Versionen ändern",
+            "feedback_theme_slug_stability"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wer hat den Bettenparadies-CI festgelegt?",
+      "expected": [
+        "bettenparadies_ci",
+        "ci"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3236,
+          "latency_ms": 41,
+          "top_ids": [
+            "MEMORY",
+            "feedback_kein_ki_geschlabber",
+            "feedback_keine_erfundenen_kunden"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 3002,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_credentials_immer_im_store",
+            "feedback_credentials_immer_in_store",
+            "feedback_familie_unter_kunden"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1543,
+          "latency_ms": 1838,
+          "top_ids": [
+            "d34f418b-b0ee-4846-8871-0da61bca3075",
+            "MEMORY",
+            "e4a7e73e-7fef-495e-95a8-e64e407a8b60"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 1542,
+          "latency_ms": 1731,
+          "top_ids": [
+            "d34f418b-b0ee-4846-8871-0da61bca3075",
+            "MEMORY",
+            "e4a7e73e-7fef-495e-95a8-e64e407a8b60"
+          ]
+        }
+      }
+    },
+    {
+      "q": "Wie kann ich Beziehungen im Graph manuell pflegen?",
+      "expected": [
+        "graph",
+        "beziehung",
+        "manual"
+      ],
+      "methods": {
+        "ripgrep": {
+          "hit": true,
+          "tokens": 3262,
+          "latency_ms": 29,
+          "top_ids": [
+            "feedback_kein_ki_geschlabber",
+            "MEMORY",
+            "feedback_johann_voice_enge_bekannte"
+          ]
+        },
+        "fname": {
+          "hit": true,
+          "tokens": 2772,
+          "latency_ms": 2,
+          "top_ids": [
+            "feedback_durcharbeiten_nicht_nachfragen",
+            "feedback_fts_sprache_nicht_hartcoden",
+            "feedback_häufige_abstürze_speichern"
+          ]
+        },
+        "vector_only": {
+          "hit": true,
+          "tokens": 1649,
+          "latency_ms": 1965,
+          "top_ids": [
+            "6348fcc6-b887-4fb1-ac89-da561e720d36",
+            "project-agent-beziehungen-2026-05-17",
+            "0bf8ec6c-7f60-4c72-a8fe-3ddf51f094d9"
+          ]
+        },
+        "knowmind": {
+          "hit": true,
+          "tokens": 2343,
+          "latency_ms": 1933,
+          "top_ids": [
+            "6348fcc6-b887-4fb1-ac89-da561e720d36",
+            "project-agent-beziehungen-2026-05-17",
+            "0bf8ec6c-7f60-4c72-a8fe-3ddf51f094d9"
+          ]
+        }
+      }
+    }
+  ]
+}
